@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <h1>Weather Information</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Enter city name" id="SearchBar" />
+        <input type="button" value="Search" id="SearchButton" />
+      </div>
+      <div class="weather-info" id="weather-info">
+        <div class="weather-condition">
+          <img
+            src="//cdn.weatherapi.com/weather/64x64/day/122.png"
+            alt="Weather Icon"
+            id="weather-icon"
+          />
+          <span id="condition-text">Overcast</span>
+        </div>
+        <div class="weather-details">
+          <div class="weather-item">
+            <span class="label">Temperature:</span>
+            <span class="value" id="temperature">14°C (57.2°F)</span>
+          </div>
+          <div class="weather-item">
+            <span class="label">Wind Speed:</span>
+            <span class="value" id="wind-speed">11.9 mph (19.1 kph)</span>
+          </div>
+          <div class="weather-item">
+            <span class="label">Precipitation:</span>
+            <span class="value" id="precipitation">0.01 mm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
